@@ -145,21 +145,10 @@ We'll use the [League OAuth 2 Client](https://github.com/thephpleague/oauth2-cli
 
 Open the `./php-tutorial/composer.json` file and locate the `require` entry. Update this entry to add `"league/oauth2-client": "^2.0"` and save the file.
 
-#### Updated `require` entry in `./php-tutorial/composer.json`
-
-```json
-"require": {
-    "php": ">=5.6.4",
-    "laravel/framework": "5.4.*",
-    "laravel/tinker": "~1.0",
-    "league/oauth2-client": "^2.0"
-},
-```
-
 Run the following command from your command prompt/shell in the `php-tutorial` directory.
 
 ```Shell
-composer update
+composer require league/oauth2-client:^2.0
 ```
 
 This will install the OAuth 2 client and dependencies into your `./php-tutorial/vendors` folder.
